@@ -15,6 +15,9 @@
 </p>
 <ng-template #noServer> <p>No server created</p> </ng-template>
 <br />
-<p [ngStyle]="{ backgroundColor: getColor() }">
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
   {{ "Server" }} with ID {{ serverId }} is {{ getServerStatus() }}
 </p>
