@@ -29,5 +29,7 @@
     </div>
   </div>
 </div>
-<button class="btn btn-warning">Display details</button>
-<p>Secret paragraph</p>
+<button class="btn btn-warning" (click)="onClickButton()">
+  Display details
+</button>
+<p *ngIf="clickedButton">Secret paragraph</p>

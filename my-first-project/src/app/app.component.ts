@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My first app';
+  clickedButton = false;
+  onClickButton() {
+    this.clickedButton = true;
+  }
 }
