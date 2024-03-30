@@ -8,7 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My first app';
   clickedButton = false;
+  clicks = ['click 1', 'click2'];
+  addParagraph = 'click';
+
   onClickButton() {
-    this.clickedButton = true;
+    this.clicks.push(this.addParagraph);
   }
 }

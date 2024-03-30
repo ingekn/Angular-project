@@ -29,7 +29,7 @@
     </div>
   </div>
 </div>
-<button class="btn btn-warning" (click)="onClickButton()">
+<button class="btn btn-warning" (click)="clickedButton = !clickedButton">
   Display details
 </button>
 <p *ngIf="clickedButton">Secret paragraph</p>
