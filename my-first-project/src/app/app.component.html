@@ -29,7 +29,9 @@
     </div>
   </div>
 </div>
-<button class="btn btn-warning" (click)="clickedButton = !clickedButton">
+<!-- <button class="btn btn-warning" (click)="clickedButton = !clickedButton">
   Display details
-</button>
+</button> -->
+<button class="btn btn-warning" (click)="showDetails()">Display details</button>
 <p *ngIf="clickedButton">Secret paragraph</p>
+<div *ngFor="let clickItem of clicks">{{ clickItem }}</div>
