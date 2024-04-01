@@ -34,4 +34,10 @@
 </button> -->
 <button class="btn btn-warning" (click)="showDetails()">Display details</button>
 <p *ngIf="clickedButton">Secret paragraph</p>
-<div *ngFor="let clickItem of clicks">{{ clickItem }}</div>
+<div
+  *ngFor="let clickItem of clicks"
+  [ngStyle]="{ backgroundColor: clickItem >= 5 ? 'blue' : 'transparant' }"
+  [ngClass]="{ 'white-text': clickItem >= 5 }"
+>
+  {{ clickItem }}
+</div>
