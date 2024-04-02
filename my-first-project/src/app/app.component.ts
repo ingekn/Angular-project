@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My first app';
-  clickedButton = false;
-  clicks = [];
-
-  showDetails() {
-    this.clickedButton = !this.clickedButton;
-    // this.clicks.push(this.clicks.length + 1);
-    this.clicks.push(new Date());
-  }
 }
