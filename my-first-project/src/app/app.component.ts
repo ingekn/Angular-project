@@ -12,6 +12,7 @@ export class AppComponent {
 
   showDetails() {
     this.clickedButton = !this.clickedButton;
-    this.clicks.push(this.clicks.length + 1);
+    // this.clicks.push(this.clicks.length + 1);
+    this.clicks.push(new Date());
   }
 }

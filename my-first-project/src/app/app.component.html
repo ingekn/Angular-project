@@ -29,15 +29,13 @@
     </div>
   </div>
 </div>
-<!-- <button class="btn btn-warning" (click)="clickedButton = !clickedButton">
-  Display details
-</button> -->
+<!-- app.component.html -->
 <button class="btn btn-warning" (click)="showDetails()">Display details</button>
 <p *ngIf="clickedButton">Secret paragraph</p>
 <div
-  *ngFor="let clickItem of clicks"
-  [ngStyle]="{ backgroundColor: clickItem >= 5 ? 'blue' : 'transparant' }"
-  [ngClass]="{ 'white-text': clickItem >= 5 }"
+  *ngFor="let clickItem of clicks; let i = index"
+  [ngStyle]="{ backgroundColor: i >= 5 ? 'blue' : 'transparant' }"
+  [ngClass]="{ 'white-text': i >= 5 }"
 >
   {{ clickItem }}
 </div>
